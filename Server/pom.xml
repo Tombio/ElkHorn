@@ -26,8 +26,7 @@
                 <configuration>
                     <appName>elkhorn</appName>
                     <processTypes>
-                        <web>java $JAVA_OPTS -cp target/classes:target/dependency/* com.studiowannabe.elkhorn.Application
-                        </web>
+                        <web>java $JAVA_OPTS -cp target/classes:target/dependency/* com.studiowannabe.elkhorn.Application</web>
                     </processTypes>
                 </configuration>
             </plugin>
