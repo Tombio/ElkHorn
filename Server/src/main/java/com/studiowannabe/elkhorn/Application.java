@@ -18,11 +18,7 @@ public class Application {
 
     public static void main(final String[] args){
         Spark.webSocket("/alert", AlertHandler.class);
-        Spark.port(Integer.parseInt(System.getenv("PORT")));
         Spark.init();
-
-        System.out.println(System.getenv("MONGODB_URI"));
-        System.out.println(System.getenv("PORT"));
     }
 
     public static void broadcastMessage(final String sender, final String message) {
