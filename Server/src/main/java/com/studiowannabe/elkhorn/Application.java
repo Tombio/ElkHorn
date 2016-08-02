@@ -18,6 +18,7 @@ public class Application {
 
     public static void main(final String[] args){
         Spark.webSocket("/alert", AlertHandler.class);
+        Spark.port(Integer.parseInt(System.getenv("PORT")));
         Spark.init();
     }
 
